@@ -1,0 +1,38 @@
+2018-12-09 19:20:13.637 [main]: DEBUG className:org.apache.shiro.io.ResourceUtils:159 loadFromClassPath -  Opening resource from class path [shiro.ini]
+2018-12-09 19:20:13.683 [main]: DEBUG className:org.apache.shiro.config.Ini:351 load -  Parsing [users]
+2018-12-09 19:20:13.697 [main]: DEBUG className:org.apache.shiro.config.IniFactorySupport:122 createInstance -  Creating instance from Ini [sections=users]
+2018-12-09 19:20:13.781 [main]: DEBUG className:org.apache.shiro.realm.text.IniRealm:185 processDefinitions -  Discovered the [users] section.  Processing...
+2018-12-09 19:20:13.975 [main]: DEBUG className:org.apache.shiro.realm.AuthenticatingRealm:569 getAuthenticationInfo -  Looked up AuthenticationInfo [shiro] from doGetAuthenticationInfo
+2018-12-09 19:20:13.976 [main]: DEBUG className:org.apache.shiro.realm.AuthenticatingRealm:507 cacheAuthenticationInfoIfPossible -  AuthenticationInfo caching is disabled for info [shiro].  Submitted token: [org.apache.shiro.authc.UsernamePasswordToken - shiro, rememberMe=false].
+2018-12-09 19:20:13.978 [main]: DEBUG className:org.apache.shiro.authc.credential.SimpleCredentialsMatcher:96 equals -  Performing credentials equality check for tokenCredentials of type [[C and accountCredentials of type [java.lang.String]
+2018-12-09 19:20:13.990 [main]: DEBUG className:org.apache.shiro.authc.credential.SimpleCredentialsMatcher:102 equals -  Both credentials arguments can be easily converted to byte arrays.  Performing array equals comparison
+2018-12-09 19:20:13.997 [main]: DEBUG className:org.apache.shiro.authc.AbstractAuthenticator:233 authenticate -  Authentication successful for token [org.apache.shiro.authc.UsernamePasswordToken - shiro, rememberMe=false].  Returned account [shiro]
+2018-12-09 19:20:13.998 [main]: DEBUG className:org.apache.shiro.subject.support.DefaultSubjectContext:102 resolveSecurityManager -  No SecurityManager available in subject context map.  Falling back to SecurityUtils.getSecurityManager() lookup.
+2018-12-09 19:20:13.998 [main]: DEBUG className:org.apache.shiro.subject.support.DefaultSubjectContext:102 resolveSecurityManager -  No SecurityManager available in subject context map.  Falling back to SecurityUtils.getSecurityManager() lookup.
+2018-12-09 19:20:13.999 [main]: DEBUG className:org.apache.shiro.session.mgt.AbstractValidatingSessionManager:213 createSessionValidationScheduler -  No sessionValidationScheduler set.  Attempting to create default instance.
+2018-12-09 19:20:14.009 [main]: DEBUG className:org.apache.shiro.session.mgt.DefaultSessionManager:175 create -  Creating new EIS record for new session instance [org.apache.shiro.session.mgt.SimpleSession,id=null]
+2018-12-09 19:20:14.038 [main]: DEBUG className:org.apache.shiro.mgt.DefaultSecurityManager:550 logout -  Logging out subject with primary principal shiro
+2018-12-09 19:20:14.039 [main]: DEBUG className:org.apache.shiro.session.mgt.AbstractNativeSessionManager:284 stop -  Stopping session with id [d1debd29-1e55-42db-ab29-c3f70600aa12]
+2018-12-09 19:20:34.169 [main]: DEBUG className:org.apache.shiro.io.ResourceUtils:159 loadFromClassPath -  Opening resource from class path [shiro.ini]
+2018-12-09 19:20:34.189 [main]: DEBUG className:org.apache.shiro.config.Ini:351 load -  Parsing [users]
+2018-12-09 19:20:34.194 [main]: DEBUG className:org.apache.shiro.config.IniFactorySupport:122 createInstance -  Creating instance from Ini [sections=users]
+2018-12-09 19:20:34.281 [main]: DEBUG className:org.apache.shiro.realm.text.IniRealm:185 processDefinitions -  Discovered the [users] section.  Processing...
+2018-12-09 19:20:34.300 [main]: DEBUG className:org.apache.shiro.realm.AuthenticatingRealm:569 getAuthenticationInfo -  Looked up AuthenticationInfo [shiro] from doGetAuthenticationInfo
+2018-12-09 19:20:34.300 [main]: DEBUG className:org.apache.shiro.realm.AuthenticatingRealm:507 cacheAuthenticationInfoIfPossible -  AuthenticationInfo caching is disabled for info [shiro].  Submitted token: [org.apache.shiro.authc.UsernamePasswordToken - shiro, rememberMe=false].
+2018-12-09 19:20:34.300 [main]: DEBUG className:org.apache.shiro.authc.credential.SimpleCredentialsMatcher:96 equals -  Performing credentials equality check for tokenCredentials of type [[C and accountCredentials of type [java.lang.String]
+2018-12-09 19:20:34.300 [main]: DEBUG className:org.apache.shiro.authc.credential.SimpleCredentialsMatcher:102 equals -  Both credentials arguments can be easily converted to byte arrays.  Performing array equals comparison
+2018-12-09 19:22:44.265 [main]: DEBUG className:org.apache.shiro.io.ResourceUtils:159 loadFromClassPath -  Opening resource from class path [shiro.ini]
+2018-12-09 19:22:44.289 [main]: DEBUG className:org.apache.shiro.config.Ini:351 load -  Parsing [users]
+2018-12-09 19:22:44.292 [main]: DEBUG className:org.apache.shiro.config.IniFactorySupport:122 createInstance -  Creating instance from Ini [sections=users]
+2018-12-09 19:22:44.343 [main]: DEBUG className:org.apache.shiro.realm.text.IniRealm:185 processDefinitions -  Discovered the [users] section.  Processing...
+2018-12-09 19:22:44.355 [main]: DEBUG className:org.apache.shiro.realm.AuthenticatingRealm:569 getAuthenticationInfo -  Looked up AuthenticationInfo [shiro] from doGetAuthenticationInfo
+2018-12-09 19:22:44.356 [main]: DEBUG className:org.apache.shiro.realm.AuthenticatingRealm:507 cacheAuthenticationInfoIfPossible -  AuthenticationInfo caching is disabled for info [shiro].  Submitted token: [org.apache.shiro.authc.UsernamePasswordToken - shiro, rememberMe=false].
+2018-12-09 19:22:44.359 [main]: DEBUG className:org.apache.shiro.authc.credential.SimpleCredentialsMatcher:96 equals -  Performing credentials equality check for tokenCredentials of type [[C and accountCredentials of type [java.lang.String]
+2018-12-09 19:22:44.359 [main]: DEBUG className:org.apache.shiro.authc.credential.SimpleCredentialsMatcher:102 equals -  Both credentials arguments can be easily converted to byte arrays.  Performing array equals comparison
+2018-12-09 19:22:44.360 [main]: DEBUG className:org.apache.shiro.authc.AbstractAuthenticator:233 authenticate -  Authentication successful for token [org.apache.shiro.authc.UsernamePasswordToken - shiro, rememberMe=false].  Returned account [shiro]
+2018-12-09 19:22:44.361 [main]: DEBUG className:org.apache.shiro.subject.support.DefaultSubjectContext:102 resolveSecurityManager -  No SecurityManager available in subject context map.  Falling back to SecurityUtils.getSecurityManager() lookup.
+2018-12-09 19:22:44.361 [main]: DEBUG className:org.apache.shiro.subject.support.DefaultSubjectContext:102 resolveSecurityManager -  No SecurityManager available in subject context map.  Falling back to SecurityUtils.getSecurityManager() lookup.
+2018-12-09 19:22:44.362 [main]: DEBUG className:org.apache.shiro.session.mgt.AbstractValidatingSessionManager:213 createSessionValidationScheduler -  No sessionValidationScheduler set.  Attempting to create default instance.
+2018-12-09 19:22:44.381 [main]: DEBUG className:org.apache.shiro.session.mgt.DefaultSessionManager:175 create -  Creating new EIS record for new session instance [org.apache.shiro.session.mgt.SimpleSession,id=null]
+2018-12-09 19:22:44.399 [main]: DEBUG className:org.apache.shiro.mgt.DefaultSecurityManager:550 logout -  Logging out subject with primary principal shiro
+2018-12-09 19:22:44.400 [main]: DEBUG className:org.apache.shiro.session.mgt.AbstractNativeSessionManager:284 stop -  Stopping session with id [169129de-c4e1-4596-8ef6-6e5417d67521]

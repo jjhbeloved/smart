@@ -1,0 +1,9 @@
+application:
+  name: smart4j
+
+public:
+  log:
+    root: .
+
+logger:
+  level: DEBUG
