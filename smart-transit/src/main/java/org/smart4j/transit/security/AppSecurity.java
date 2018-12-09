@@ -15,7 +15,7 @@ public class AppSecurity implements SmartSecurity {
 	}
 
 	@Override
-	public Set<String> getRolenNmeSet(String username) {
+	public Set<String> getRolenNameSet(String username) {
 		return null;
 	}
 

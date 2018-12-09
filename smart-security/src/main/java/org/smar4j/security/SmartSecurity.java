@@ -10,7 +10,7 @@ public interface SmartSecurity {
 
 	String getPassword(String username);
 
-	Set<String> getRolenNmeSet(String username);
+	Set<String> getRolenNameSet(String username);
 
 	Set<String> getPermissionNameSet(String roleName);
 }

@@ -9,6 +9,7 @@ import org.apache.shiro.subject.Subject;
 import org.apache.shiro.util.Factory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.smart4j.framework.util.JsonUtil;
 
 /**
  * @author: YANGXUAN223
@@ -28,8 +29,12 @@ public class HelloShiro {
 		UsernamePasswordToken upt = new UsernamePasswordToken("shiro", "201812");
 		try {
 			LOGGER.info("{}", subject.getPrincipal());
+			LOGGER.info("{}", subject.isAuthenticated());
+			LOGGER.info("{}", JsonUtil.toJson(subject.getSession()));
 			subject.login(upt);
-			LOGGER.info("{}", subject.getPrincipal());
+			LOGGER.info("{}", subject.getPrincipals());
+			LOGGER.info("{}", subject.isAuthenticated());
+			LOGGER.info("{}", JsonUtil.toJson(subject.getSession()));
 		} catch (AuthenticationException e) {
 			LOGGER.error("login failure", e);
 			return;

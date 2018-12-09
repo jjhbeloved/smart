@@ -1,5 +1,6 @@
 package org.smart4j.framework.util;
 
+import org.apache.commons.codec.digest.DigestUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.smart4j.framework.ConfigConstant;
@@ -13,23 +14,27 @@ import java.net.URLEncoder;
  */
 public class CodeUtil {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(CodeUtil.class);
+	private static final Logger LOGGER = LoggerFactory.getLogger(CodeUtil.class);
 
-    public static String encodeURL(String source) {
-        try {
-            return URLEncoder.encode(source, ConfigConstant.ENC_UTF_8);
-        } catch (UnsupportedEncodingException e) {
-            LOGGER.error("encode url failure", e);
-            throw new RuntimeException(e);
-        }
-    }
+	public static String encodeURL(String source) {
+		try {
+			return URLEncoder.encode(source, ConfigConstant.ENC_UTF_8);
+		} catch (UnsupportedEncodingException e) {
+			LOGGER.error("encode url failure", e);
+			throw new RuntimeException(e);
+		}
+	}
 
-    public static String decodeURL(String source) {
-        try {
-            return URLEncoder.encode(source, ConfigConstant.ENC_UTF_8);
-        } catch (UnsupportedEncodingException e) {
-            LOGGER.error("decode url failure", e);
-            throw new RuntimeException(e);
-        }
-    }
+	public static String decodeURL(String source) {
+		try {
+			return URLEncoder.encode(source, ConfigConstant.ENC_UTF_8);
+		} catch (UnsupportedEncodingException e) {
+			LOGGER.error("decode url failure", e);
+			throw new RuntimeException(e);
+		}
+	}
+
+	public static String md5(String param) {
+		return DigestUtils.md5Hex(param);
+	}
 }
